@@ -1,6 +1,6 @@
 this is a Nextjs app to solve the two problems provided in the PDF.
 
-Open [https://technical-task-jankaram.vercel.app/](https://technical-task-jankaram.vercel.app/)
+Open [https://technical-task-jankaram.vercel.app/](https://technical-task-jankaram.vercel.app/) to see it live
 ## Getting Started Locally
 
 First, clone the repo
