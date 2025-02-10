@@ -1,6 +1,7 @@
 this is a Nextjs app to solve the two problems provided in the PDF.
 
-## Getting Started
+Open [https://technical-task-jankaram.vercel.app/](https://technical-task-jankaram.vercel.app/)
+## Getting Started Locally
 
 First, clone the repo
 ```bash
