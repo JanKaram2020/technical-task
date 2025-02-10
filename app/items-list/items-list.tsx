@@ -51,18 +51,29 @@ const ItemsList = () => {
   const { items, loading, error } = useTodos();
 
   return (
-    <div>
-      <h2>Items List</h2>
+    <div className="max-w-2xl mx-auto p-4 bg-white shadow-md rounded-lg">
+      <h2 className="text-xl font-semibold mb-4">Items List</h2>
       {error ? (
-        <p>{error}</p>
+        <p className="text-red-500">{error}</p>
       ) : loading ? (
-        <p>Loading...</p>
+        <p className="text-gray-500">Loading...</p>
       ) : Array.isArray(items) && items.length ? (
-        <ul>
+        <ul className="space-y-2">
           {items.map((item) => (
-            <li key={item.id}>
-              <p>{item.title}</p>
-              <span>{item.completed ? "Completed" : "Pending"}</span>
+            <li
+              key={item.id}
+              className="flex justify-between items-center p-2 border rounded-lg shadow-sm"
+            >
+              <p className="text-gray-800">{item.title}</p>
+              <span
+                className={`px-2 py-1 text-xs font-semibold rounded-lg w-20 text-center ${
+                  item.completed
+                    ? "bg-green-500 text-white"
+                    : "bg-gray-300 text-gray-700"
+                }`}
+              >
+                {item.completed ? "Completed" : "Pending"}
+              </span>
             </li>
           ))}
         </ul>
